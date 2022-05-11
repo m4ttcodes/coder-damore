@@ -1,0 +1,19 @@
+{
+  "name": "damore",
+  "version": "1.0.0",
+  "description": "Aplicando Sass a mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass style.scss ./css/style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v1nnce/coder-damore.git"
+  },
+  "author": "Vicente Aburto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v1nnce/coder-damore/issues"
+  },
+  "homepage": "https://github.com/v1nnce/coder-damore#readme"
+}
