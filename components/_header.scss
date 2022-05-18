@@ -1,25 +1,27 @@
 .header {
   width: 100%;
   display: grid;
+  align-items: center;
+  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 100px;
+  grid-template-rows: 200px 100px;
   grid-template-areas:
    "icono1 logo icono3" 
    "nav nav nav";
   background-color: $bgColor;
 
-  &__icono--1 {
+  &__icono__instagram {
     grid-area: icono1;
     padding-left: 50px;
     padding-top: 90px;
   }
 
-  &__icono--2 {
+  &__icono__facebook {
     padding-left: 5px;
     padding-top: 90px;
   }
   
-  &__icono--3 {
+  &__icono__carrito {
     padding-top: 90px;
     padding-right: 100px;
     grid-area: icono3;
@@ -28,20 +30,20 @@
   &__logo {
     grid-area: logo;
     width: 400px;
-    height: 400px;
+    height: auto;
     justify-self: center;
   }
+}  
 
-  &__ul {
+.nav__ul {
     grid-area: nav;
     list-style-type: none;
     display: flex;
     font-size: 20px;
   }
   
-  &__li {
+.nav__li {
     color: black;
     text-decoration: none;
     margin: 50px;
   }
-}

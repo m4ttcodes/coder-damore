@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.productTemplate {
+  margin: 0px 100px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin imageSize($width) {
+  height: 500px;
+    width: $width;
+}
+
+@media screen and (max-width:320px) {
+
+  body {
+    background-color: #F6EFE8;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+
+  body {
+    background-color: #F6EFE8;
+  }
+  
+}
