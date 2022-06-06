@@ -1,3 +1,5 @@
+                                  // INDEX
+
 .main {
   background-color: $bgColor
 }
@@ -18,25 +20,31 @@
   
 }
 
+.section__text {
+  margin-left: 100px;
+}
+
 .section__galery {
+  margin-top: 100px;
+  margin-left: 50px;
 
-  margin-top: 200px;
-
+  &__foto2 {
+    width: 400px;
+    height: auto;
+  }
+  
+  &__foto3 {
+    width: 400px;
+    height: auto;
+  }
+  
   &__foto4 {
     width: 400px;
     height: auto;
   }
-  
-  &__foto6 {
-    width: 400px;
-    height: auto;
-  }
-  
-  &__foto7 {
-    width: 400px;
-    height: auto;
-  }
 }
+
+                                  // TIENDA
 
 .tienda {
  @extend .productTemplate;
@@ -74,6 +82,13 @@
   }
 }
 
+// SERVICIOS
+
+.servicios {
+  margin-top: 200px;
+  margin-left: 200px;
+  padding-bottom: 400px;
+}
 .juegos {
   @extend .productTemplate;
   
@@ -94,11 +109,7 @@
   
 }
 
-.servicios {
-  margin-top: 200px;
-  margin-left: 200px;
-  padding-bottom: 400px;
-}
+                              // QUIENES SOMOS
 
 .section__somos {
   display: flex;
@@ -112,9 +123,10 @@
   }
   
   &__foto {
-    margin: 50px 50px;
+    margin: 50px;
+    margin-right: 200px;
     width: auto;
-    height: 500px;
+    height: 700px;
     
   }
 }

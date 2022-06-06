@@ -6,27 +6,20 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 100px;
   grid-template-areas:
-   "icono1 logo icono3" 
+   " . logo carrito" 
    "nav nav nav";
   background-color: $bgColor;
 
-  &__icono__instagram {
-    grid-area: icono1;
-    padding-left: 50px;
-    padding-top: 90px;
-  }
+                        // icono carrito
 
-  &__icono__facebook {
-    padding-left: 5px;
-    padding-top: 90px;
-  }
-  
   &__icono__carrito {
+    grid-area: carrito;
     padding-top: 90px;
     padding-right: 100px;
-    grid-area: icono3;
   } 
 
+                                 // LOGO
+  
   &__logo {
     grid-area: logo;
     width: 400px;
@@ -34,6 +27,8 @@
     justify-self: center;
   }
 }  
+
+                        // barra de navegación
 
 .nav__ul {
     grid-area: nav;
@@ -47,3 +42,56 @@
     text-decoration: none;
     margin: 50px;
   }
+
+                          // Barra de busqueda
+
+.search-box {
+     display: grid;
+    grid-area: search;
+    transform: translate( -50%, -50%);
+    background: #2C3441;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+  }
+
+.search-box:hover > input {
+    width: 200px;
+    padding: 0 10px;
+  }
+
+.search-box:hover > .icon{
+    background: #536179;
+  }
+
+.icon:hover{
+  transform: rotate(360deg)
+scale(0.8);
+}  
+input{
+  width: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: none;
+  font-size: 1.1rem;
+    transition: 0.5s ease;
+  line-height: 40px;
+  color: #fff;
+}
+
+.icon {
+  color: #21DFCD;
+  float: right;
+  width: 40px;
+  font-size: 1.3rem;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
