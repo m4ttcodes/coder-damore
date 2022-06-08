@@ -8,8 +8,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+                            // pagina tienda 
+
 .productTemplate {
-  margin: 0px 100px;
+  margin: 0px 50px;
   padding-top: 80px;
   padding-bottom: 120px;
   display: flex;
@@ -18,22 +20,6 @@
 }
 
 @mixin imageSize($width) {
-  height: 500px;
+  height: 800px;
     width: $width;
-}
-
-@media screen and (max-width:320px) {
-
-  body {
-    background-color: #F6EFE8;
-  }
-  
-}
-
-@media screen and (max-width:768px) {
-
-  body {
-    background-color: #F6EFE8;
-  }
-  
 }
