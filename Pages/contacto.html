@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                               <!-- KEYWORDS -->
+                              
+  <meta name="keywords" content="BODAS, WEDDING, PARTES DE MATRIMONIO, INVITACIONES, CHILE">
+  <meta name="description" content="Contacto D'amore">
   <title>D'amore - Contacto</title>
                                   <!-- FAVICON -->
   <link rel="shortcut icon" href="../Images/favicon.png" type="image/x-icon">
@@ -20,12 +24,12 @@
                              <!-- ICONO CARRITO -->
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAn9JREFUSEuNlo1xFDEMhT9VQDqAVECo4G4roARSQlIBUAGhAlICVMDSwaWDSweXCsRYlm3Z+5PszM3teq2/p6e3FgABtLtJD2G97cgv/NnsBETdPq4H+7Qv/aqxoGaYo75y7exbe5XywQKsVLQXqjjL/62s4C3W4BUF7ErQ3lGH2CL+WEFsRYFVRJLrlJYeBQ4VtQJqxTLlmrIvOzawq3YG0QXRn8kk9Ih5EajgKRoa/lrzFj34JHDqAoEcGhNCxm8lSMihMBJlAuaEHJrRmIFD2PsscFbhCvjYKNwInvDItvIMeoa8d6g5BwqLY6B/AkfviBFrbE/O2qLdIzygHIG/5jQtW++9ouCgDyScUa7dv/Uv261O+DWQKroT+JH5U1nh0LVE575HVqttAm78/50VUCNa1O+g3xzQM6Lvh4Ev0FVMQkV17eTBLsAH4AH47Cg8ASnAb4ffqmk5uA9hQiX2SGbQSAazF3hUuAcuO+S7FfjVFdpmfFIs0FDRYswNqzPoHcKfAZZU5VfgtnExAdvpSmNdaXij96B/LdUE4cn9JCqn3mXHVWv8tunQJOgavQURF5qQXM3RZ2cVxoKPz4TJm+raHCVlKJXH0amNXRWObkCDAjiEE7I/sOFz1X+gcti+pqjYpY++NkkmQ71GZegT9XlbZ95G0Oxhf2BXFKehGlII4tklFh4mMa1rcjEjemj0HfuyUouTrdB54wQQlCFT8xH4ssSrUL07hbRxNNu1d8aqF9CrlKL3yDbeeLBe5rcwjBnVyrpzzYtLlulgC2SGZXDifRumhWhsHJiqbpdk/Ai0cbzaUbahmrGvVVcC56PWdUfGkUJvQTAeOccz53+egRQ3LarRLgAAAABJRU5ErkJggg=="/>
       
-                                <!-- LOGO DAMORE -->
-    <!-- <a href="../index.html"> -->
+                              <!-- LOGO DAMORE -->
+
       <img class="header__logo" src="../Images/logodamore.png" alt="logo d'amore">
     </a>
 
-                          <!-- barra navegación -->
+                            <!-- barra navegación -->
 
     <nav>
       <ul class="nav__ul">
@@ -38,28 +42,32 @@
     </nav>
   </header>
                                 <!-- MAIN -->
-  <main>
+  <main class="main">
+    <div class="contact__title">
+      <h1>Si presentas cualquier tipo de problema o consulta, contáctanos!</h1>
+    </div>
                         <!-- FORMULARIO CONTACTO -->
-    <form action="" method="" enctype="">
+    <form class="contact__form" action="" method="" enctype="">  <!-- atributos action, method y enctype no tienen uso de momento pero los dejo ya que serán usados en un futuro para conectar con el backend -->
       <div>
           <label for="nombre">Nombre Completo*</label>
           <input required type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
       </div>
 
       <div>
-          <label for="apellido">Correo electrónico*</label>
-          <input required type="number" id="edad" name="edad" placeholder="Ingrese su correo" >
+          <label for="email">Correo electrónico*</label>
+          <input required type="email" id="email" name="email" placeholder="Ingrese su correo" >
       </div>
 
       <div>
-          <label for="email">Teléfono</label>
-          <input type="password" id="password" name="password" placeholder="Ingresar número">
+          <label for="phone">Teléfono</label>
+          <input type="number" id="phone" name="phone" placeholder="Ingresar número">
       </div>
 
       <div>
           <label for="tipo">Tipo de Consulta:</label>
           <select name="tipo" id="tipo">
-              <option value="Despacho a domicilio">Despacho a domicilio</option>
+              <option value="Ayuda">Ayuda</option>
+              <option value="Envío">Envío</option>
               <option value="Reembolso">Reembolso</option>
               <option value="Devolución">Devolución</option>
           </select>
@@ -71,15 +79,14 @@
       </div>
 
       <div>
-        <button>Limpiar formulario</button>
-        <button>Enviar formulario</button>
+        <button>Enviar</button>
       </div>
    </form>
     </div>
   </main>
                                 <!-- FOOTER -->
   <footer class="footer">
-    <p class="footer__p">Derechos Reservados D'amore 2022</p>
+    <span class="footer__copyright">Derechos Reservados D'amore 2022</span>
     <a href="../index.html">
       <img class="footer__logo" src="../Images/logodamore2.png" alt="logo d'amore">
     </a>

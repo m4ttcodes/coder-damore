@@ -7,10 +7,10 @@
   grid-template-rows: 200px 100px;
   grid-template-areas:
    " . logo carrito" 
-   "nav nav nav";
+   " . nav . ";
   background-color: $bgColor;
 
-                        // icono carrito
+                           // icono carrito
 
   &__icono__carrito {
     grid-area: carrito;
@@ -30,9 +30,15 @@
 
                         // barra de navegación
 
+.nav {
+ margin-left: auto;
+ margin-right: auto;
+}
+
 .nav__ul {
     grid-area: nav;
     list-style-type: none;
+    justify-content: center;
     display: flex;
     font-size: 20px;
   }
@@ -45,53 +51,53 @@
 
                           // Barra de busqueda
 
-.search-box {
-     display: grid;
-    grid-area: search;
-    transform: translate( -50%, -50%);
-    background: #2C3441;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-  }
+// .search-box {
+//      display: grid;
+//     grid-area: search;
+//     transform: translate( -50%, -50%);
+//     background: #2C3441;
+//     height: 40px;
+//     border-radius: 40px;
+//     padding: 10px;
+//   }
 
-.search-box:hover > input {
-    width: 200px;
-    padding: 0 10px;
-  }
+// .search-box:hover > input {
+//     width: 200px;
+//     padding: 0 10px;
+//   }
 
-.search-box:hover > .icon{
-    background: #536179;
-  }
+// .search-box:hover > .icon{
+//     background: #536179;
+//   }
 
-.icon:hover{
-  transform: rotate(360deg)
-scale(0.8);
-}  
-input{
-  width: 0;
-  border: none;
-  outline: none;
-  padding: 0;
-  background: none;
-  font-size: 1.1rem;
-    transition: 0.5s ease;
-  line-height: 40px;
-  color: #fff;
-}
+// .icon:hover{
+//   transform: rotate(360deg)
+// scale(0.8);
+// }  
+// input{
+//   width: 0;
+//   border: none;
+//   outline: none;
+//   padding: 0;
+//   background: none;
+//   font-size: 1.1rem;
+//     transition: 0.5s ease;
+//   line-height: 40px;
+//   color: #fff;
+// }
 
-.icon {
-  color: #21DFCD;
-  float: right;
-  width: 40px;
-  font-size: 1.3rem;
-  height: 40px;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-}
+// .icon {
+//   color: #21DFCD;
+//   float: right;
+//   width: 40px;
+//   font-size: 1.3rem;
+//   height: 40px;
+//   border-radius: 50%;
+//   background: #2f3640;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: 0.4s;
+//   cursor: pointer;
+//   text-decoration: none;
+// }

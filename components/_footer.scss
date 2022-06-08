@@ -1,8 +1,5 @@
 .footer {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: white;
 
   &__copyright {
@@ -10,25 +7,11 @@
   }
 
   &__logo {
+    align-items: center;
     width: 200px;
     height: auto;
   } 
 }
 
-.instagram, .facebook {
-  text-decoration: none;
-  color: black;
-}
 
-$rrss: (
-  instagram: #F2F2F7,
-  facebook: #F2F2F7
-);
 
-@each $name, $color in $rrss {
-  .#{$name} {
-    background-color: $color;
-    padding: 10px;
-    border-radius: 20px;
-  }
-}
