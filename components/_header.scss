@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 100px;
   grid-template-areas:
@@ -55,7 +55,7 @@
 //      display: grid;
 //     grid-area: search;
 //     transform: translate( -50%, -50%);
-//     background: #2C3441;
+//     background: white;
 //     height: 40px;
 //     border-radius: 40px;
 //     padding: 10px;
@@ -87,13 +87,13 @@
 // }
 
 // .icon {
-//   color: #21DFCD;
+//   color: black;
 //   float: right;
 //   width: 40px;
 //   font-size: 1.3rem;
 //   height: 40px;
 //   border-radius: 50%;
-//   background: #2f3640;
+//   background: white;
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
