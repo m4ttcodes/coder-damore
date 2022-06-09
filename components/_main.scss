@@ -32,11 +32,14 @@
   
 }
 
-.section__text {
+.container__text {
   margin-left: 100px;
 }
 
-.section__galery {
+.container__galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-top: 100px;
   margin-left: 100px;
 
@@ -116,12 +119,13 @@
                                   // SERVICIOS
 
 .servicios {
-  margin-top: 200px;
-  margin-left: 200px;
-  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-left: 300px;
+  padding-bottom: 50px;
 
   &__form {
-    margin-left: 200px;
+    padding-bottom: 100px;
+    margin-left: 520px;
   }
 }
 
@@ -143,13 +147,14 @@
     background-size: cover;
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 70px;
+    font-weight: 600;
   }
 
   &__jenga__button {
     font-size: 20px;
     background-color: white;
-    border: 10px solid white;
+    border: 15px solid white;
   }
 
   &__dardos__foto {
@@ -162,13 +167,14 @@
     background-size: cover;
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: 600;
   }
 
   &__dardos__button {
     font-size: 20px;
     background-color: white;
-    border: 10px solid white;
+    border: 15px solid white;
   }
   
 }
@@ -202,90 +208,94 @@
 
                                 // CONTACTO
 
-// .contact__title {
+.btn {
+  margin: 20px;
+}
+
+// .contact__container__title {
+//   font-size: 25px;
 //   padding-top: 100px;
-//   margin-left: 500px;
-//   margin-bottom: 100px;
+//   margin-left: 400px;
+//   margin-bottom: 50px;
 // }
 
 // .contact__form {
-//   width: 70%;
+//   width: 50%;
 //   min-height: 65vh;
 //   margin: 20px auto;
 //   padding: 20px;
-//   background-color: gray
 // }
 
 
 
-.contact__container {
-  width: 70%;
-  min-height: 65vh;
-  margin: 20px auto;
+// .contact__container {
+//   width: 70%;
+//   min-height: 65vh;
+//   margin: 20px auto;
 
-  &__form {
-    margin: 30px auto;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+//   &__form {
+//     margin: 30px auto;
+//     padding: 20px;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
-    p {
-      text-align: center;
-    }
+//     p {
+//       text-align: center;
+//     }
     
-    form  {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+//     form  {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
 
-      div {
-        padding: 2em;
-      }
+//       div {
+//         padding: 2em;
+//       }
 
-      .formulario--area {
-        grid-column: 1 / 3;
-      }
+//       .formulario--area {
+//         grid-column: 1 / 3;
+//       }
 
-      button {
-        width: 100%;
-        padding: 5px;
-        border: none;
-        background: none;
-        outline: none;
-        border-bottom: 1px solid orange;
-        min-width: 130px;
-        height: 40px;
-        color: #fff;
-        padding: 5px 10px;
-        font-family: inherit;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        border-radius: 5px;
-        border: none;
-        background-size: 120% auto;
-        background-image: linear-gradient(315deg, #c02425 0%, #f0cb35 75%);
+//       button {
+//         width: 100%;
+//         padding: 5px;
+//         border: none;
+//         background: none;
+//         outline: none;
+//         border-bottom: 1px solid orange;
+//         min-width: 130px;
+//         height: 40px;
+//         color: #fff;
+//         padding: 5px 10px;
+//         font-family: inherit;
+//         font-weight: bold;
+//         text-transform: uppercase;
+//         cursor: pointer;
+//         transition: all 0.3s ease;
+//         position: relative;
+//         display: inline-block;
+//         outline: none;
+//         border-radius: 5px;
+//         border: none;
+//         background-size: 120% auto;
+//         background-image: linear-gradient(315deg, #c02425 0%, #f0cb35 75%);
 
-        &:hover {
-          background-position: right center;
-        }
-        &:active {
-          top: 2px;
-        }
-      }
+//         &:hover {
+//           background-position: right center;
+//         }
+//         &:active {
+//           top: 2px;
+//         }
+//       }
 
-      input,
-      select,
-      textarea {
-        width: 100%;
-        padding: 5px;
-        border: none;
-        background: none;
-        outline: none;
-        border-bottom: 1px solid orange;
-      }
-    }    
-  }
-}
+//       input,
+//       select,
+//       textarea {
+//         width: 100%;
+//         padding: 5px;
+//         border: none;
+//         background: none;
+//         outline: none;
+//         border-bottom: 1px solid orange;
+//       }
+//     }    
+//   }
+// }
